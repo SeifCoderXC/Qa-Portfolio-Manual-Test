@@ -1,0 +1,61 @@
+{
+  "screenSize": "Large",
+  "tutorialsShown": [
+    "Happiness",
+    "Introduction",
+    "SlowStart"
+  ],
+  "tutorialTasksCompleted": [
+    "Found city",
+    "Enter city screen",
+    "Move unit",
+    "Pick technology",
+    "Open the options table",
+    "Create a trade route",
+    "Pick construction"
+  ],
+  "confirmNextTurn": true,
+  "autoPlay": {},
+  "multiplayer": {
+    "userId": "redacted"
+  },
+  "windowState": {
+    "width": 1366,
+    "height": 713
+  },
+  "showAutosaves": true,
+  "overview": {},
+  "lastGameSetup": {
+    "gameParameters": {
+      "difficulty": "Chieftain",
+      "players": [
+        {
+          "playerType": "Human"
+        },
+        {}
+      ],
+      "espionageEnabled": true,
+      "victoryTypes": [
+        "Scientific",
+        "Cultural",
+        "Domination",
+        "Diplomatic",
+        "Time"
+      ],
+      "showCivilizationStats": true
+    },
+    "mapParameters": {
+      "shape": "Rectangular",
+      "mapSize": {
+        "name": "Tiny",
+        "radius": 10,
+        "width": 23,
+        "height": 15
+      },
+      "worldWrap": true,
+      "createdWithVersion": "4.22.3 (Build 1264)",
+      "seed": 1790284303141
+    }
+  },
+  "version": 1
+}

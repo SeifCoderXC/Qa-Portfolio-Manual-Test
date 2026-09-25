@@ -1,0 +1,27 @@
+https://seiftester.testrail.io/index.php?/projects/overview/1
+https://seiftester.testrail.io/index.php?/runs/view/1
+
+TC-001 passed https://seiftester.testrail.io/index.php?/cases/view/1
+TC-002 passed https://seiftester.testrail.io/index.php?/cases/view/2
+TC-003 passed https://seiftester.testrail.io/index.php?/cases/view/3
+TC-004 passed https://seiftester.testrail.io/index.php?/cases/view/4
+TC-005 passed https://seiftester.testrail.io/index.php?/cases/view/5
+TC-006 passed https://seiftester.testrail.io/index.php?/cases/view/6
+TC-007 passed https://seiftester.testrail.io/index.php?/cases/view/7
+TC-008 passed https://seiftester.testrail.io/index.php?/cases/view/8
+TC-009 passed https://seiftester.testrail.io/index.php?/cases/view/9
+TC-010 passed https://seiftester.testrail.io/index.php?/cases/view/10
+TC-011 passed https://seiftester.testrail.io/index.php?/cases/view/11
+TC-012 blocked https://seiftester.testrail.io/index.php?/cases/view/12
+TC-013 blocked https://seiftester.testrail.io/index.php?/cases/view/13
+TC-014 passed https://seiftester.testrail.io/index.php?/cases/view/14
+TC-015 passed https://seiftester.testrail.io/index.php?/cases/view/15
+TC-016 passed https://seiftester.testrail.io/index.php?/cases/view/16
+TC-017 passed https://seiftester.testrail.io/index.php?/cases/view/17
+TC-018 passed https://seiftester.testrail.io/index.php?/cases/view/18
+TC-019 passed https://seiftester.testrail.io/index.php?/cases/view/19
+TC-020 passed https://seiftester.testrail.io/index.php?/cases/view/20
+TC-021 passed https://seiftester.testrail.io/index.php?/cases/view/21
+TC-022 blocked https://seiftester.testrail.io/index.php?/cases/view/22
+TC-023 passed https://seiftester.testrail.io/index.php?/cases/view/23
+TC-024 blocked https://seiftester.testrail.io/index.php?/cases/view/24

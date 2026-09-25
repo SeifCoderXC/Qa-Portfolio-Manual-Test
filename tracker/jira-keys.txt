@@ -1,0 +1,26 @@
+UQ-1 [Unciv] Test execution 2026-09-25 desktop https://seifelislam140-1789314302044.atlassian.net/browse/UQ-1
+UQ-2 [Unciv] TC-012 blocked — warrior has no illegal neighbour https://seifelislam140-1789314302044.atlassian.net/browse/UQ-2
+UQ-3 [Unciv] TC-013 blocked — no adjacent hostile by turn 4 https://seifelislam140-1789314302044.atlassian.net/browse/UQ-3
+UQ-4 [Unciv] TC-022 blocked — New Game fields all have defaults https://seifelislam140-1789314302044.atlassian.net/browse/UQ-4
+UQ-5 [Unciv] TC-024 blocked — no road tile to measure https://seifelislam140-1789314302044.atlassian.net/browse/UQ-5
+UQ-6 [Unciv] Desktop QA 4.22.3 — 2026-09-25 https://seifelislam140-1789314302044.atlassian.net/browse/UQ-6
+UQ-7 [Unciv] TC-001 passed — Launch reaches main menu https://seifelislam140-1789314302044.atlassian.net/browse/UQ-7
+UQ-8 [Unciv] TC-002 passed — New Game screen opens https://seifelislam140-1789314302044.atlassian.net/browse/UQ-8
+UQ-9 [Unciv] TC-003 passed — Start a tiny single-player game https://seifelislam140-1789314302044.atlassian.net/browse/UQ-9
+UQ-10 [Unciv] TC-004 passed — First turn controls exist https://seifelislam140-1789314302044.atlassian.net/browse/UQ-10
+UQ-11 [Unciv] TC-005 passed — New Game with no mods https://seifelislam140-1789314302044.atlassian.net/browse/UQ-11
+UQ-12 [Unciv] TC-006 passed — Found a city with the settler https://seifelislam140-1789314302044.atlassian.net/browse/UQ-12
+UQ-13 [Unciv] TC-007 passed — Queue a production item https://seifelislam140-1789314302044.atlassian.net/browse/UQ-13
+UQ-14 [Unciv] TC-008 passed — Change production before completion https://seifelislam140-1789314302044.atlassian.net/browse/UQ-14
+UQ-15 [Unciv] TC-009 passed — Open tech picker and select a tech https://seifelislam140-1789314302044.atlassian.net/browse/UQ-15
+UQ-16 [Unciv] TC-010 passed — Research selection survives Next Turn https://seifelislam140-1789314302044.atlassian.net/browse/UQ-16
+UQ-17 [Unciv] TC-011 passed — Move a unit one tile https://seifelislam140-1789314302044.atlassian.net/browse/UQ-17
+UQ-18 [Unciv] TC-014 passed — Civilopedia opens and closes https://seifelislam140-1789314302044.atlassian.net/browse/UQ-18
+UQ-19 [Unciv] TC-015 passed — Resize window mid-game https://seifelislam140-1789314302044.atlassian.net/browse/UQ-19
+UQ-20 [Unciv] TC-016 passed — Change an option and read it back https://seifelislam140-1789314302044.atlassian.net/browse/UQ-20
+UQ-21 [Unciv] TC-017 passed — Option survives restart https://seifelislam140-1789314302044.atlassian.net/browse/UQ-21
+UQ-22 [Unciv] TC-018 passed — Save a named game https://seifelislam140-1789314302044.atlassian.net/browse/UQ-22
+UQ-23 [Unciv] TC-019 passed — Load the named save https://seifelislam140-1789314302044.atlassian.net/browse/UQ-23
+UQ-24 [Unciv] TC-020 passed — Continue after quit https://seifelislam140-1789314302044.atlassian.net/browse/UQ-24
+UQ-25 [Unciv] TC-021 passed — Smallest map still playable https://seifelislam140-1789314302044.atlassian.net/browse/UQ-25
+UQ-26 [Unciv] TC-023 passed — Save name rejected or trimmed if empty https://seifelislam140-1789314302044.atlassian.net/browse/UQ-26

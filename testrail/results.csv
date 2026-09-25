@@ -1,0 +1,145 @@
+Run,Run id,Run completed,Case ID,Title,Status,Preconditions,Steps,Expected
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C1,TC-001 Launch reaches main menu,Passed,"Java 21 installed; Unciv.jar present
+
+Requirement: REQ-01
+Test data: java 21.0.7","1. Open a terminal in the install folder
+2. Run java -jar Unciv.jar
+3. Wait until a window appears",Main menu is visible. No crash dialog. Version string readable.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C2,TC-002 New Game screen opens,Passed,"Main menu visible
+
+Requirement: REQ-02
+Test data: default","1. Click New game
+2. Look for civ / difficulty / map controls","New Game screen shows civilization, difficulty, and map options."
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C3,TC-003 Start a tiny single-player game,Passed,"New Game screen
+
+Requirement: REQ-02
+Test data: tiny map 1–2 AI","1. Pick any playable civ
+2. Set smallest map the UI offers
+3. Set fewest AI opponents the UI offers
+4. Difficulty Prince or equivalent
+5. Start game",Game leaves New Game and shows the map. No freeze longer than map-gen spinner.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C4,TC-004 First turn controls exist,Passed,"Game started TC-003
+
+Requirement: REQ-03
+Test data:","1. Look at the map
+2. Click a unit if one is selected by default
+3. Find Next Turn",At least one unit or settler can be selected. Next Turn is visible and enabled or explains why not.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C5,TC-005 New Game with no mods,Passed,"Mods not installed or disabled
+
+Requirement: REQ-15
+Test data: no mods","1. From main menu open the mods / content list if present
+2. Confirm none enabled
+3. Start another tiny game",Game starts on the base ruleset. No missing-mod dialog.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C6,TC-006 Found a city with the settler,Passed,"First turn; settler selected
+
+Requirement: REQ-04
+Test data: settler","1. Move settler onto a flat land tile if needed
+2. Use Found city
+3. Accept the name if prompted",A city appears on that tile. City screen or city banner is available.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C7,TC-007 Queue a production item,Passed,"City founded
+
+Requirement: REQ-05
+Test data: first buildable","1. Open the city
+2. Open production
+3. Choose a worker or monument or the first listed build
+4. Confirm it sits in the queue",Selected item is the current production. Turns-remaining or progress is shown.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C8,TC-008 Change production before completion,Passed,"Item in queue from TC-007
+
+Requirement: REQ-05
+Test data: second item","1. Open production again
+2. Pick a different item
+3. Close and reopen the city",Queue shows the new item. Old item is not still building unless the UI says it was kept.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C9,TC-009 Open tech picker and select a tech,Passed,"First turns
+
+Requirement: REQ-06
+Test data: first tech","1. Open research / tech picker
+2. Select the first available tech
+3. Close picker
+4. Reopen",Selected tech is highlighted or listed as current research.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C10,TC-010 Research selection survives Next Turn,Passed,"Tech selected TC-009
+
+Requirement: REQ-06
+Test data:","1. Next Turn once or twice
+2. Open tech picker",Same tech still selected unless it completed.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C11,TC-011 Move a unit one tile,Passed,"Unit with movement remaining
+
+Requirement: REQ-07
+Test data: one tile","1. Select a unit
+2. Click an adjacent legal tile
+3. Watch movement points",Unit occupies the new tile. Movement points drop.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C12,TC-012 Unit cannot enter illegal tile,Blocked,"Unit selected
+
+Requirement: REQ-07
+Test data: illegal tile","1. Try to move onto a tile the UI treats as illegal (deep water for a land unit if shown)
+2. Observe",Move is refused or not offered. Unit stays put. No crash.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C13,TC-013 Attack an adjacent hostile if present,Blocked,"Military unit next to barbarian or AI unit
+
+Requirement: REQ-08
+Test data: first contact","1. Select own military unit
+2. Attack the hostile
+3. Read the combat result",HP of one side changes or a unit dies. No freeze.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C14,TC-014 Civilopedia opens and closes,Passed,"Main menu or in-game menu
+
+Requirement: REQ-14
+Test data: any entry","1. Open Civilopedia
+2. Open one entry
+3. Close back to the game",Entry text is visible. Closing returns to the previous screen. UI stays responsive.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C15,TC-015 Resize window mid-game,Passed,"In-game map visible
+
+Requirement: REQ-13
+Test data: two sizes","1. Drag the window corner
+2. Make it smaller then larger
+3. Click a unit",Map redraws. Buttons remain clickable. No permanent black region.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C16,TC-016 Change an option and read it back,Passed,"Main menu Options
+
+Requirement: REQ-12
+Test data: one toggle","1. Open Options
+2. Change one display or autosave control
+3. Close Options
+4. Reopen Options",The control still shows the new value.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C17,TC-017 Option survives restart,Passed,"TC-016 done
+
+Requirement: REQ-12
+Test data: same toggle","1. Quit Unciv
+2. java -jar Unciv.jar
+3. Open the same option",Value from TC-016 is still there.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C18,TC-018 Save a named game,Passed,"City founded; turn > 1
+
+Requirement: REQ-09
+Test data: QA-pack-2026-09-24","1. Open Save
+2. Type a unique name
+3. Confirm
+4. Open the save list",The name appears in the list. No error toast.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C19,TC-019 Load the named save,Passed,"TC-018 saved; optionally quit first
+
+Requirement: REQ-10
+Test data: same save","1. Load QA-pack-2026-09-24
+2. Check turn number and city existence",Turn and city match the save moment. Map is the same seed/layout.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C20,TC-020 Continue after quit,Passed,"Saved game exists
+
+Requirement: REQ-11
+Test data: last game","1. Quit to OS
+2. Launch
+3. Continue or Load last",Same match resumes. Not a new map.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C21,TC-021 Smallest map still playable,Passed,"New Game
+
+Requirement: REQ-02
+Test data: min settings","1. Set every size/opponent control to the minimum the UI allows
+2. Start
+3. Found a city",Game starts. Map has room for the city. No crash during gen.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C22,TC-022 Start blocked when a required choice is empty,Blocked,"New Game
+
+Requirement: REQ-02
+Test data: incomplete form","1. Clear or leave unset any required field the UI lets you clear
+2. Click Start",Start does nothing or shows a prompt. No crash. No half-generated map.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C23,TC-023 Save name rejected or trimmed if empty,Passed,"Save dialog open
+
+Requirement: REQ-09
+Test data: empty name","1. Clear the name field
+2. Confirm",Save is refused or a default name is applied. No crash. No zero-byte file as the only slot.
+Unciv 4.22.3 desktop 2026-09-25,1,yes,C24,TC-024 Owned roads not charged as neutral — regression,Blocked,"Road on owned tile if reachable in timebox
+
+Requirement: REQ-08
+Test data: owned road","1. Have a road on a tile you own
+2. Move a unit along it
+3. Compare movement cost to a neutral road if one exists",Movement cost matches owned-road rules. See BUG-005 (4.22.0 fix).

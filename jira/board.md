@@ -1,0 +1,1337 @@
+# Jira board — Unciv QA (UQ)
+
+Snapshot of the private Jira project, taken 2026-09-25. The live board asks for an Atlassian login, so this page is the copy to read.
+
+Project **Unciv QA**, key UQ, board **UQ board**. Epic **UQ-6**. 26 issues: 21 Done, 4 To Do, epic In Progress. No Bug issue was opened. The four To Do tasks are blocked cases, not defects.
+
+Same run in TestRail: closed run 1, 20 passed, 4 blocked, 0 failed. See [testrail/results.csv](../testrail/results.csv).
+
+Screenshots on this page are in [evidence/screenshots](../evidence/screenshots). The Jira text below still names the tester-machine folder `evidance/`, which is the same set of files.
+
+## Board
+
+| Key | Case | Type | Jira status | Result | Summary |
+|---|---|---|---|---|---|
+| UQ-6 | — | Epic | In Progress | — | [Unciv] Desktop QA 4.22.3 — 2026-09-25 |
+| UQ-1 | — | Task | Done | Closed | [Unciv] Test execution 2026-09-25 desktop |
+| UQ-7 | TC-001 | Task | Done | Passed | [Unciv] TC-001 passed — Launch reaches main menu |
+| UQ-8 | TC-002 | Task | Done | Passed | [Unciv] TC-002 passed — New Game screen opens |
+| UQ-9 | TC-003 | Task | Done | Passed | [Unciv] TC-003 passed — Start a tiny single-player game |
+| UQ-10 | TC-004 | Task | Done | Passed | [Unciv] TC-004 passed — First turn controls exist |
+| UQ-11 | TC-005 | Task | Done | Passed | [Unciv] TC-005 passed — New Game with no mods |
+| UQ-12 | TC-006 | Task | Done | Passed | [Unciv] TC-006 passed — Found a city with the settler |
+| UQ-13 | TC-007 | Task | Done | Passed | [Unciv] TC-007 passed — Queue a production item |
+| UQ-14 | TC-008 | Task | Done | Passed | [Unciv] TC-008 passed — Change production before completion |
+| UQ-15 | TC-009 | Task | Done | Passed | [Unciv] TC-009 passed — Open tech picker and select a tech |
+| UQ-16 | TC-010 | Task | Done | Passed | [Unciv] TC-010 passed — Research selection survives Next Turn |
+| UQ-17 | TC-011 | Task | Done | Passed | [Unciv] TC-011 passed — Move a unit one tile |
+| UQ-2 | TC-012 | Task | To Do | Blocked | [Unciv] TC-012 blocked — warrior has no illegal neighbour |
+| UQ-3 | TC-013 | Task | To Do | Blocked | [Unciv] TC-013 blocked — no adjacent hostile by turn 4 |
+| UQ-18 | TC-014 | Task | Done | Passed | [Unciv] TC-014 passed — Civilopedia opens and closes |
+| UQ-19 | TC-015 | Task | Done | Passed | [Unciv] TC-015 passed — Resize window mid-game |
+| UQ-20 | TC-016 | Task | Done | Passed | [Unciv] TC-016 passed — Change an option and read it back |
+| UQ-21 | TC-017 | Task | Done | Passed | [Unciv] TC-017 passed — Option survives restart |
+| UQ-22 | TC-018 | Task | Done | Passed | [Unciv] TC-018 passed — Save a named game |
+| UQ-23 | TC-019 | Task | Done | Passed | [Unciv] TC-019 passed — Load the named save |
+| UQ-24 | TC-020 | Task | Done | Passed | [Unciv] TC-020 passed — Continue after quit |
+| UQ-25 | TC-021 | Task | Done | Passed | [Unciv] TC-021 passed — Smallest map still playable |
+| UQ-4 | TC-022 | Task | To Do | Blocked | [Unciv] TC-022 blocked — New Game fields all have defaults |
+| UQ-26 | TC-023 | Task | Done | Passed | [Unciv] TC-023 passed — Save name rejected or trimmed if empty |
+| UQ-5 | TC-024 | Task | To Do | Blocked | [Unciv] TC-024 blocked — no road tile to measure |
+
+Environment on every issue: Unciv 4.22.3, launcher `./Unciv`, OpenJDK 21.0.7, Linux Lite (Ubuntu 24.04 family), X11, English UI, no mods. Tester: Seif El Islam Bouklab. Dates: start 2026-09-25, due 2026-09-25.
+
+## UQ-6 — [Unciv] Desktop QA 4.22.3 — 2026-09-25
+
+**Type:** Epic  
+**Status:** In Progress  
+**Priority:** High  
+**Assignee:** Seif el islam bouklab  
+**Parent:** —  
+
+Desktop certification of Unciv 4.22.3 on 2026-09-25. 24 cases executed. 20 passed, 0 failed, 4 blocked. No defect filed.
+
+Passed cases are Done tasks under this epic. Blocked cases stay To Do. They are follow-up tasks, not bugs.
+
+[TestRail run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+---
+
+## UQ-1 — [Unciv] Test execution 2026-09-25 desktop
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** High  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Links:** relates to UQ-2; relates to UQ-3; relates to UQ-4; relates to UQ-5; relates to UQ-7; relates to UQ-8; relates to UQ-9; relates to UQ-10; relates to UQ-11; relates to UQ-12; relates to UQ-13; relates to UQ-14; relates to UQ-15; relates to UQ-16; relates to UQ-17; relates to UQ-18; relates to UQ-19; relates to UQ-20; relates to UQ-21; relates to UQ-22; relates to UQ-23; relates to UQ-24; relates to UQ-25; relates to UQ-26  
+
+Closed desktop run. Planned 24, run 24, passed 20, failed 0, blocked 4, not run 0. No bug was opened.
+
+#### Build
+
+Unciv 4.22.3, launcher ./Unciv. Tester Seif El Islam Bouklab.
+
+#### Results
+
+| Case | Priority | Type | Result | TestRail |
+| --- | --- | --- | --- | --- |
+| TC-001 | High | Smoke | Passed | [Launch reaches main menu](https://seiftester.testrail.io/index.php?/cases/view/1) |
+| TC-002 | High | Smoke | Passed | [New Game screen opens](https://seiftester.testrail.io/index.php?/cases/view/2) |
+| TC-003 | High | Smoke | Passed | [Start a tiny single-player game](https://seiftester.testrail.io/index.php?/cases/view/3) |
+| TC-004 | High | Smoke | Passed | [First turn controls exist](https://seiftester.testrail.io/index.php?/cases/view/4) |
+| TC-005 | High | Smoke | Passed | [New Game with no mods](https://seiftester.testrail.io/index.php?/cases/view/5) |
+| TC-006 | High | Functional | Passed | [Found a city with the settler](https://seiftester.testrail.io/index.php?/cases/view/6) |
+| TC-007 | High | Functional | Passed | [Queue a production item](https://seiftester.testrail.io/index.php?/cases/view/7) |
+| TC-008 | Medium | Functional | Passed | [Change production before completion](https://seiftester.testrail.io/index.php?/cases/view/8) |
+| TC-009 | High | Functional | Passed | [Open tech picker and select a tech](https://seiftester.testrail.io/index.php?/cases/view/9) |
+| TC-010 | High | Functional | Passed | [Research selection survives Next Turn](https://seiftester.testrail.io/index.php?/cases/view/10) |
+| TC-011 | High | Functional | Passed | [Move a unit one tile](https://seiftester.testrail.io/index.php?/cases/view/11) |
+| TC-012 | Medium | Negative | Blocked | [Unit cannot enter illegal tile](https://seiftester.testrail.io/index.php?/cases/view/12) |
+| TC-013 | Medium | Functional | Blocked | [Attack an adjacent hostile if present](https://seiftester.testrail.io/index.php?/cases/view/13) |
+| TC-014 | Medium | Usability | Passed | [Civilopedia opens and closes](https://seiftester.testrail.io/index.php?/cases/view/14) |
+| TC-015 | Medium | Usability | Passed | [Resize window mid-game](https://seiftester.testrail.io/index.php?/cases/view/15) |
+| TC-016 | High | Functional | Passed | [Change an option and read it back](https://seiftester.testrail.io/index.php?/cases/view/16) |
+| TC-017 | High | Confirmation | Passed | [Option survives restart](https://seiftester.testrail.io/index.php?/cases/view/17) |
+| TC-018 | High | Functional | Passed | [Save a named game](https://seiftester.testrail.io/index.php?/cases/view/18) |
+| TC-019 | High | Functional | Passed | [Load the named save](https://seiftester.testrail.io/index.php?/cases/view/19) |
+| TC-020 | High | Functional | Passed | [Continue after quit](https://seiftester.testrail.io/index.php?/cases/view/20) |
+| TC-021 | Medium | Boundary | Passed | [Smallest map still playable](https://seiftester.testrail.io/index.php?/cases/view/21) |
+| TC-022 | Low | Negative | Blocked | [Start blocked when a required choice is empty](https://seiftester.testrail.io/index.php?/cases/view/22) |
+| TC-023 | Low | Negative | Passed | [Save name rejected or trimmed if empty](https://seiftester.testrail.io/index.php?/cases/view/23) |
+| TC-024 | Medium | Confirmation | Blocked | [Owned roads not charged as neutral — regression](https://seiftester.testrail.io/index.php?/cases/view/24) |
+
+#### Blocked follow-up
+
+- UQ-2 TC-012 no illegal neighbour for the warrior
+- UQ-3 TC-013 no adjacent hostile by turn 4
+- UQ-4 TC-022 New Game fields all have defaults
+- UQ-5 TC-024 no road tile to measure
+
+#### Links
+
+[TestRail run](https://seiftester.testrail.io/index.php?/runs/view/1) · [TestRail project](https://seiftester.testrail.io/index.php?/projects/overview/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+Local evidence: evidance/run/test-run.xlsx and evidance/run/unciv-evidence-2026-09-25.zip
+
+---
+
+## UQ-7 — [Unciv] TC-001 passed — Launch reaches main menu
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** High  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-001  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-01 · Smoke · High
+
+#### Preconditions
+
+Java 21 installed; Unciv.jar present
+
+#### Test data
+
+java 21.0.7
+
+#### Steps
+
+1. Open a terminal in the install folder
+2. Run java -jar Unciv.jar
+3. Wait until a window appears
+
+#### Expected
+
+Main menu is visible. No crash dialog. Version string readable.
+
+#### Actual
+
+Main menu visible. No crash dialog. Version 4.22.3 readable on screen.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0009_TC001_main-menu.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/1) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-001](../evidence/screenshots/2026-09-25_0009_TC001_main-menu.png)
+
+---
+
+## UQ-8 — [Unciv] TC-002 passed — New Game screen opens
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** High  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-002  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-02 · Smoke · High
+
+#### Preconditions
+
+Main menu visible
+
+#### Test data
+
+default
+
+#### Steps
+
+1. Click New game
+2. Look for civ / difficulty / map controls
+
+#### Expected
+
+New Game screen shows civilization, difficulty, and map options.
+
+#### Actual
+
+New Game opened with Game Options, Map Options, and Civilizations visible.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0013_TC002_newgame-screen.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/2) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-002](../evidence/screenshots/2026-09-25_0013_TC002_newgame-screen.png)
+
+---
+
+## UQ-9 — [Unciv] TC-003 passed — Start a tiny single-player game
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** High  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-003  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-02 · Smoke · High
+
+#### Preconditions
+
+New Game screen
+
+#### Test data
+
+tiny map 1–2 AI
+
+#### Steps
+
+1. Pick any playable civ
+2. Set smallest map the UI offers
+3. Set fewest AI opponents the UI offers
+4. Difficulty Prince or equivalent
+5. Start game
+
+#### Expected
+
+Game leaves New Game and shows the map. No freeze longer than map-gen spinner.
+
+#### Actual
+
+World Size Tiny, 1 human + 1 AI, Chieftain. Map rendered and the Ottoman intro showed. No freeze.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0014_TC003_game-started.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/3) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-003](../evidence/screenshots/2026-09-25_0014_TC003_game-started.png)
+
+---
+
+## UQ-10 — [Unciv] TC-004 passed — First turn controls exist
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** High  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-004  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-03 · Smoke · High
+
+#### Preconditions
+
+Game started TC-003
+
+#### Test data
+
+
+
+#### Steps
+
+1. Look at the map
+2. Click a unit if one is selected by default
+3. Find Next Turn
+
+#### Expected
+
+At least one unit or settler can be selected. Next Turn is visible and enabled or explains why not.
+
+#### Actual
+
+Settler auto-selected with the Found-city prompt. Next unit control visible and enabled.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0015_TC004_first-turn-controls.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/4) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-004](../evidence/screenshots/2026-09-25_0015_TC004_first-turn-controls.png)
+
+---
+
+## UQ-11 — [Unciv] TC-005 passed — New Game with no mods
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** High  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-005  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-15 · Smoke · High
+
+#### Preconditions
+
+Mods not installed or disabled
+
+#### Test data
+
+no mods
+
+#### Steps
+
+1. From main menu open the mods / content list if present
+2. Confirm none enabled
+3. Start another tiny game
+
+#### Expected
+
+Game starts on the base ruleset. No missing-mod dialog.
+
+#### Actual
+
+No mods were enabled. Starting the game did not show a missing-mod dialog.
+
+#### Evidence
+
+No separate screenshot. Observed during the same match.
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/5) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+---
+
+## UQ-12 — [Unciv] TC-006 passed — Found a city with the settler
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** High  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-006  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-04 · Functional · High
+
+#### Preconditions
+
+First turn; settler selected
+
+#### Test data
+
+settler
+
+#### Steps
+
+1. Move settler onto a flat land tile if needed
+2. Use Found city
+3. Accept the name if prompted
+
+#### Expected
+
+A city appears on that tile. City screen or city banner is available.
+
+#### Actual
+
+Found city. Istanbul was founded.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0022_TC006_city-founded.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/6) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-006](../evidence/screenshots/2026-09-25_0022_TC006_city-founded.png)
+
+---
+
+## UQ-13 — [Unciv] TC-007 passed — Queue a production item
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** High  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-007  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-05 · Functional · High
+
+#### Preconditions
+
+City founded
+
+#### Test data
+
+first buildable
+
+#### Steps
+
+1. Open the city
+2. Open production
+3. Choose a worker or monument or the first listed build
+4. Confirm it sits in the queue
+
+#### Expected
+
+Selected item is the current production. Turns-remaining or progress is shown.
+
+#### Actual
+
+City screen opened. Warrior is the current construction.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0023_TC007_queued.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/7) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-007](../evidence/screenshots/2026-09-25_0023_TC007_queued.png)
+
+---
+
+## UQ-14 — [Unciv] TC-008 passed — Change production before completion
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** Medium  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-008  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-05 · Functional · Medium
+
+#### Preconditions
+
+Item in queue from TC-007
+
+#### Test data
+
+second item
+
+#### Steps
+
+1. Open production again
+2. Pick a different item
+3. Close and reopen the city
+
+#### Expected
+
+Queue shows the new item. Old item is not still building unless the UI says it was kept.
+
+#### Actual
+
+Production changed from Warrior to Monument. Reopened city still showed Monument. Queue empty.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0124_TC008-step3_monument.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/8) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-008](../evidence/screenshots/2026-09-25_0124_TC008-step3_monument.png)
+
+---
+
+## UQ-15 — [Unciv] TC-009 passed — Open tech picker and select a tech
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** High  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-009  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-06 · Functional · High
+
+#### Preconditions
+
+First turns
+
+#### Test data
+
+first tech
+
+#### Steps
+
+1. Open research / tech picker
+2. Select the first available tech
+3. Close picker
+4. Reopen
+
+#### Expected
+
+Selected tech is highlighted or listed as current research.
+
+#### Actual
+
+Pottery selected and shown as the current research after returning to the map.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0024_TC009-step2_selected.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/9) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-009](../evidence/screenshots/2026-09-25_0024_TC009-step2_selected.png)
+
+---
+
+## UQ-16 — [Unciv] TC-010 passed — Research selection survives Next Turn
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** High  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-010  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-06 · Functional · High
+
+#### Preconditions
+
+Tech selected TC-009
+
+#### Test data
+
+
+
+#### Steps
+
+1. Next Turn once or twice
+2. Open tech picker
+
+#### Expected
+
+Same tech still selected unless it completed.
+
+#### Actual
+
+Pottery stayed the current tech after Next turn. Progress moved from 0/22 to 4/22.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0130_TC010-turn1.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/10) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-010](../evidence/screenshots/2026-09-25_0130_TC010-turn1.png)
+
+---
+
+## UQ-17 — [Unciv] TC-011 passed — Move a unit one tile
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** High  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-011  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-07 · Functional · High
+
+#### Preconditions
+
+Unit with movement remaining
+
+#### Test data
+
+one tile
+
+#### Steps
+
+1. Select a unit
+2. Click an adjacent legal tile
+3. Watch movement points
+
+#### Expected
+
+Unit occupies the new tile. Movement points drop.
+
+#### Actual
+
+Warrior moved one adjacent tile. Movement dropped from 2/2 to 1/2.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0026_TC011_moved-confirm.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/11) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-011](../evidence/screenshots/2026-09-25_0026_TC011_moved-confirm.png)
+
+---
+
+## UQ-2 — [Unciv] TC-012 blocked — warrior has no illegal neighbour
+
+**Type:** Task  
+**Status:** To Do  
+**Priority:** Medium  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-012  
+**Result:** Blocked  
+**Links:** relates to UQ-1  
+
+Result: Blocked. This is not a defect.
+
+#### Requirement
+
+REQ-07 · Negative · Medium
+
+#### Preconditions
+
+Unit selected
+
+#### Test data
+
+illegal tile
+
+#### Steps
+
+1. Try to move onto a tile the UI treats as illegal (deep water for a land unit if shown)
+2. Observe
+
+#### Expected
+
+Move is refused or not offered. Unit stays put. No crash.
+
+#### Actual
+
+Blocked, not a defect. The warrior's six neighbours were land. The visible coast is next to the city, not the warrior. A click on that coast left movement at 2/2. No crash.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0133_TC012-water-click.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/12) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-012](../evidence/screenshots/2026-09-25_0133_TC012-water-click.png)
+
+---
+
+## UQ-3 — [Unciv] TC-013 blocked — no adjacent hostile by turn 4
+
+**Type:** Task  
+**Status:** To Do  
+**Priority:** Medium  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-013  
+**Result:** Blocked  
+**Links:** relates to UQ-1  
+
+Result: Blocked. This is not a defect.
+
+#### Requirement
+
+REQ-08 · Functional · Medium
+
+#### Preconditions
+
+Military unit next to barbarian or AI unit
+
+#### Test data
+
+first contact
+
+#### Steps
+
+1. Select own military unit
+2. Attack the hostile
+3. Read the combat result
+
+#### Expected
+
+HP of one side changes or a unit dies. No freeze.
+
+#### Actual
+
+Blocked, not a defect. Turn 4, 3760 BC. Barbarian brutes at (1,-7) and (3,6). Ottoman warrior at (-2,5). Greek warrior at (2,-2). None adjacent, so no attack was made.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0149_back-to-map.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/13) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-013](../evidence/screenshots/2026-09-25_0149_back-to-map.png)
+
+---
+
+## UQ-18 — [Unciv] TC-014 passed — Civilopedia opens and closes
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** Medium  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-014  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-14 · Usability · Medium
+
+#### Preconditions
+
+Main menu or in-game menu
+
+#### Test data
+
+any entry
+
+#### Steps
+
+1. Open Civilopedia
+2. Open one entry
+3. Close back to the game
+
+#### Expected
+
+Entry text is visible. Closing returns to the previous screen. UI stays responsive.
+
+#### Actual
+
+Civilopedia opened, an entry was readable, and close returned to the game. No UI lockup.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0027_TC014_closed-responsive.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/14) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-014](../evidence/screenshots/2026-09-25_0027_TC014_closed-responsive.png)
+
+---
+
+## UQ-19 — [Unciv] TC-015 passed — Resize window mid-game
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** Medium  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-015  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-13 · Usability · Medium
+
+#### Preconditions
+
+In-game map visible
+
+#### Test data
+
+two sizes
+
+#### Steps
+
+1. Drag the window corner
+2. Make it smaller then larger
+3. Click a unit
+
+#### Expected
+
+Map redraws. Buttons remain clickable. No permanent black region.
+
+#### Actual
+
+Window resized smaller, the map redrawn, a click still worked, then the window was restored.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0135_TC015-restored.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/15) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-015](../evidence/screenshots/2026-09-25_0135_TC015-restored.png)
+
+---
+
+## UQ-20 — [Unciv] TC-016 passed — Change an option and read it back
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** High  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-016  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-12 · Functional · High
+
+#### Preconditions
+
+Main menu Options
+
+#### Test data
+
+one toggle
+
+#### Steps
+
+1. Open Options
+2. Change one display or autosave control
+3. Close Options
+4. Reopen Options
+
+#### Expected
+
+The control still shows the new value.
+
+#### Actual
+
+A gameplay option was toggled and was still checked after Options was closed and reopened.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0028_TC016_reopened-persists.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/16) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-016](../evidence/screenshots/2026-09-25_0028_TC016_reopened-persists.png)
+
+---
+
+## UQ-21 — [Unciv] TC-017 passed — Option survives restart
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** High  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-017  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-12 · Confirmation · High
+
+#### Preconditions
+
+TC-016 done
+
+#### Test data
+
+same toggle
+
+#### Steps
+
+1. Quit Unciv
+2. java -jar Unciv.jar
+3. Open the same option
+
+#### Expected
+
+Value from TC-016 is still there.
+
+#### Actual
+
+After quit and relaunch, Ask for confirmation when pressing next turn was still checked. GameSettings.json confirmNextTurn=true.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0103_TC017_persists-after-restart.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/17) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-017](../evidence/screenshots/2026-09-25_0103_TC017_persists-after-restart.png)
+
+---
+
+## UQ-22 — [Unciv] TC-018 passed — Save a named game
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** High  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-018  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-09 · Functional · High
+
+#### Preconditions
+
+City founded; turn > 1
+
+#### Test data
+
+QA-pack-2026-09-24
+
+#### Steps
+
+1. Open Save
+2. Type a unique name
+3. Confirm
+4. Open the save list
+
+#### Expected
+
+The name appears in the list. No error toast.
+
+#### Actual
+
+Saved as QA-20260925. The file is on disk.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0017_TC018_saved.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/18) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-018](../evidence/screenshots/2026-09-25_0017_TC018_saved.png)
+
+---
+
+## UQ-23 — [Unciv] TC-019 passed — Load the named save
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** High  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-019  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-10 · Functional · High
+
+#### Preconditions
+
+TC-018 saved; optionally quit first
+
+#### Test data
+
+same save
+
+#### Steps
+
+1. Load QA-pack-2026-09-24
+2. Check turn number and city existence
+
+#### Expected
+
+Turn and city match the save moment. Map is the same seed/layout.
+
+#### Actual
+
+Loaded QA-20260925. Turn and city state matched the pre-save screen.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0019_TC019_loaded-match.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/19) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-019](../evidence/screenshots/2026-09-25_0019_TC019_loaded-match.png)
+
+---
+
+## UQ-24 — [Unciv] TC-020 passed — Continue after quit
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** High  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-020  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-11 · Functional · High
+
+#### Preconditions
+
+Saved game exists
+
+#### Test data
+
+last game
+
+#### Steps
+
+1. Quit to OS
+2. Launch
+3. Continue or Load last
+
+#### Expected
+
+Same match resumes. Not a new map.
+
+#### Actual
+
+Exit ended the process. After relaunch, Resume restored the same match (turn 0, 4000 BC).
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0021_TC020_resumed-match.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/20) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-020](../evidence/screenshots/2026-09-25_0021_TC020_resumed-match.png)
+
+---
+
+## UQ-25 — [Unciv] TC-021 passed — Smallest map still playable
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** Medium  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-021  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-02 · Boundary · Medium
+
+#### Preconditions
+
+New Game
+
+#### Test data
+
+min settings
+
+#### Steps
+
+1. Set every size/opponent control to the minimum the UI allows
+2. Start
+3. Found a city
+
+#### Expected
+
+Game starts. Map has room for the city. No crash during gen.
+
+#### Actual
+
+On the Tiny map with 1 AI at Chieftain, Istanbul was founded.
+
+#### Evidence
+
+No separate screenshot. Observed during the same match.
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/21) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+---
+
+## UQ-4 — [Unciv] TC-022 blocked — New Game fields all have defaults
+
+**Type:** Task  
+**Status:** To Do  
+**Priority:** Low  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-022  
+**Result:** Blocked  
+**Links:** relates to UQ-1  
+
+Result: Blocked. This is not a defect.
+
+#### Requirement
+
+REQ-02 · Negative · Low
+
+#### Preconditions
+
+New Game
+
+#### Test data
+
+incomplete form
+
+#### Steps
+
+1. Clear or leave unset any required field the UI lets you clear
+2. Click Start
+
+#### Expected
+
+Start does nothing or shows a prompt. No crash. No half-generated map.
+
+#### Actual
+
+Blocked, not a defect. Civilization, difficulty, map size, and AI count all have defaults. No required control could be cleared, so Start was not tested as a refused action.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0013_TC002_newgame-screen.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/22) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-022](../evidence/screenshots/2026-09-25_0013_TC002_newgame-screen.png)
+
+---
+
+## UQ-26 — [Unciv] TC-023 passed — Save name rejected or trimmed if empty
+
+**Type:** Task  
+**Status:** Done  
+**Priority:** Low  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-023  
+**Result:** Passed  
+**Links:** relates to UQ-1  
+
+Result: Passed.
+
+#### Requirement
+
+REQ-09 · Negative · Low
+
+#### Preconditions
+
+Save dialog open
+
+#### Test data
+
+empty name
+
+#### Steps
+
+1. Clear the name field
+2. Confirm
+
+#### Expected
+
+Save is refused or a default name is applied. No crash. No zero-byte file as the only slot.
+
+#### Actual
+
+Empty save name. Enter created no file and no zero-byte save.
+
+#### Evidence
+
+evidance/screenshots/2026-09-25_0140_TC023-after-enter.png
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/23) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+![TC-023](../evidence/screenshots/2026-09-25_0140_TC023-after-enter.png)
+
+---
+
+## UQ-5 — [Unciv] TC-024 blocked — no road tile to measure
+
+**Type:** Task  
+**Status:** To Do  
+**Priority:** Medium  
+**Assignee:** Seif el islam bouklab  
+**Parent:** UQ-6  
+**Case:** TC-024  
+**Result:** Blocked  
+**Links:** relates to UQ-1  
+
+Result: Blocked. This is not a defect.
+
+#### Requirement
+
+REQ-08 · Confirmation · Medium
+
+#### Preconditions
+
+Road on owned tile if reachable in timebox
+
+#### Test data
+
+owned road
+
+#### Steps
+
+1. Have a road on a tile you own
+2. Move a unit along it
+3. Compare movement cost to a neutral road if one exists
+
+#### Expected
+
+Movement cost matches owned-road rules. See BUG-005 (4.22.0 fix).
+
+#### Actual
+
+Blocked, not a defect. The turn-4 save has no Road improvement. The city center is the only connected tile. No worker was trained. Owned-road movement cost was not compared. Same reason blocks the BUG-005 check.
+
+#### Evidence
+
+evidance/saves/Autosave-turn4.json
+
+#### Links
+
+[TestRail case](https://seiftester.testrail.io/index.php?/cases/view/24) · [Run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
+
+Save used as evidence: `evidance/saves/Autosave-turn4.json`.
+
+---

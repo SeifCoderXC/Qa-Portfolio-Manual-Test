@@ -1,0 +1,73 @@
+test_id,requirement_id,title,priority,type,precondition,steps,test_data,expected_result,actual_result,status,notes
+TC-001,REQ-01,Launch reaches main menu,High,Smoke,Java 21 installed; Unciv.jar present,"1. Open a terminal in the install folder
+2. Run java -jar Unciv.jar
+3. Wait until a window appears",java 21.0.7,Main menu is visible. No crash dialog. Version string readable.,"Main menu clean, no crash dialog, version readable bottom-center",Passed,Record version into env/ENVIRONMENT.md Executed 2026-09-25 on 4.22.3. Jira UQ-7.
+TC-002,REQ-02,New Game screen opens,High,Smoke,Main menu visible,"1. Click New game
+2. Look for civ / difficulty / map controls",default,"New Game screen shows civilization, difficulty, and map options.",Game Options / Map Options / Civilizations all present,Passed,Executed 2026-09-25 on 4.22.3. Jira UQ-8.
+TC-003,REQ-02,Start a tiny single-player game,High,Smoke,New Game screen,"1. Pick any playable civ
+2. Set smallest map the UI offers
+3. Set fewest AI opponents the UI offers
+4. Difficulty Prince or equivalent
+5. Start game",tiny map 1–2 AI,Game leaves New Game and shows the map. No freeze longer than map-gen spinner.,"Tiny map, 1 human + 1 AI, Chieftain. Left New Game screen, map shown, no freeze.",Passed,If Start stays disabled write which field is empty Executed 2026-09-25 on 4.22.3. Jira UQ-9.
+TC-004,REQ-03,First turn controls exist,High,Smoke,Game started TC-003,"1. Look at the map
+2. Click a unit if one is selected by default
+3. Find Next Turn",,At least one unit or settler can be selected. Next Turn is visible and enabled or explains why not.,Settler auto-selected with Found-city prompt; Next unit (2 idle) visible/enabled,Passed,Executed 2026-09-25 on 4.22.3. Jira UQ-10.
+TC-005,REQ-15,New Game with no mods,High,Smoke,Mods not installed or disabled,"1. From main menu open the mods / content list if present
+2. Confirm none enabled
+3. Start another tiny game",no mods,Game starts on the base ruleset. No missing-mod dialog.,No mods installed; game started on base Gods & Kings ruleset with no missing-mod dialog (cross-ref TC-003 evidence),Passed,Executed 2026-09-25 on 4.22.3. Jira UQ-11.
+TC-006,REQ-04,Found a city with the settler,High,Functional,First turn; settler selected,"1. Move settler onto a flat land tile if needed
+2. Use Found city
+3. Accept the name if prompted",settler,A city appears on that tile. City screen or city banner is available.,City Istanbul founded; banner and stats visible,Passed,Executed 2026-09-25 on 4.22.3. Jira UQ-12.
+TC-007,REQ-05,Queue a production item,High,Functional,City founded,"1. Open the city
+2. Open production
+3. Choose a worker or monument or the first listed build
+4. Confirm it sits in the queue",first buildable,Selected item is the current production. Turns-remaining or progress is shown.,"Warrior queued as current construction, production panel highlighted green",Passed,Exact building names vary by civ Executed 2026-09-25 on 4.22.3. Jira UQ-13.
+TC-008,REQ-05,Change production before completion,Medium,Functional,Item in queue from TC-007,"1. Open production again
+2. Pick a different item
+3. Close and reopen the city",second item,Queue shows the new item. Old item is not still building unless the UI says it was kept.,"Warrior was current. Monument added, Warrior removed. Reopened city: Monument still current, queue empty.",Passed,Executed 2026-09-25 on 4.22.3. Jira UQ-14.
+TC-009,REQ-06,Open tech picker and select a tech,High,Functional,First turns,"1. Open research / tech picker
+2. Select the first available tech
+3. Close picker
+4. Reopen",first tech,Selected tech is highlighted or listed as current research.,"Pottery selected as current research, shown in top-left tech panel with progress",Passed,4.21.8 listed ANR on this screen — do not rage-scroll Executed 2026-09-25 on 4.22.3. Jira UQ-15.
+TC-010,REQ-06,Research selection survives Next Turn,High,Functional,Tech selected TC-009,"1. Next Turn once or twice
+2. Open tech picker",,Same tech still selected unless it completed.,Pottery was current at 0/22. After one Next turn it was still Pottery at 4/22.,Passed,Executed 2026-09-25 on 4.22.3. Jira UQ-16.
+TC-011,REQ-07,Move a unit one tile,High,Functional,Unit with movement remaining,"1. Select a unit
+2. Click an adjacent legal tile
+3. Watch movement points",one tile,Unit occupies the new tile. Movement points drop.,"Warrior moved to Cattle tile, movement 2/2 -> 1/2",Passed,Executed 2026-09-25 on 4.22.3. Jira UQ-17.
+TC-012,REQ-07,Unit cannot enter illegal tile,Medium,Negative,Unit selected,"1. Try to move onto a tile the UI treats as illegal (deep water for a land unit if shown)
+2. Observe",illegal tile,Move is refused or not offered. Unit stays put. No crash.,"Selected warrior's six neighbours are land. Visible coast is next to the city, not the warrior. Double-click on that coast left the warrior at 2/2. No crash. No illegal neighbour to refuse.",Blocked,Skip if no illegal neighbour exists Executed 2026-09-25 on 4.22.3. Jira UQ-2.
+TC-013,REQ-08,Attack an adjacent hostile if present,Medium,Functional,Military unit next to barbarian or AI unit,"1. Select own military unit
+2. Attack the hostile
+3. Read the combat result",first contact,HP of one side changes or a unit dies. No freeze.,"Turn 4, 3760 BC. Barbarian Brutes at (1,-7) and (3,6). Ottoman warrior at (-2,5). Greece warrior at (2,-2). None adjacent. No attack. Worked-tiles tutorial kept stealing later Next-turn clicks.",Blocked,If no hostile in 20 turns mark BLOCKED not FAIL Executed 2026-09-25 on 4.22.3. Jira UQ-3.
+TC-014,REQ-14,Civilopedia opens and closes,Medium,Usability,Main menu or in-game menu,"1. Open Civilopedia
+2. Open one entry
+3. Close back to the game",any entry,Entry text is visible. Closing returns to the previous screen. UI stays responsive.,"Opened Civilopedia, opened Contact Me entry, closed back to game screen; UI stayed responsive",Passed,4.21.11 mentioned ANR here Executed 2026-09-25 on 4.22.3. Jira UQ-18.
+TC-015,REQ-13,Resize window mid-game,Medium,Usability,In-game map visible,"1. Drag the window corner
+2. Make it smaller then larger
+3. Click a unit",two sizes,Map redraws. Buttons remain clickable. No permanent black region.,"Window reduced to about 960x600, map and buttons redrawn, a tile click still registered. Restored to 1366x713. UI still usable.",Passed,Executed 2026-09-25 on 4.22.3. Jira UQ-19.
+TC-016,REQ-12,Change an option and read it back,High,Functional,Main menu Options,"1. Open Options
+2. Change one display or autosave control
+3. Close Options
+4. Reopen Options",one toggle,The control still shows the new value.,"Toggled 'Ask for confirmation when pressing next turn' ON, closed+reopened Options, value still checked",Passed,Write the exact label you changed Executed 2026-09-25 on 4.22.3. Jira UQ-20.
+TC-017,REQ-12,Option survives restart,High,Confirmation,TC-016 done,"1. Quit Unciv
+2. java -jar Unciv.jar
+3. Open the same option",same toggle,Value from TC-016 is still there.,"Ask for confirmation when pressing next turn still checked after quit and relaunch. Checkbox-center luminance 75.6 on the post-restart shot, matching the checked shot (74.5) and not the unchecked shot (46.3). GameSettings confirmNextTurn=true.",Passed,Executed 2026-09-25 on 4.22.3. Jira UQ-21.
+TC-018,REQ-09,Save a named game,High,Functional,City founded; turn > 1,"1. Open Save
+2. Type a unique name
+3. Confirm
+4. Open the save list",QA-pack-2026-09-24,The name appears in the list. No error toast.,"Saved as QA-20260925; file confirmed at SaveFiles/QA-20260925, copied to evidance/saves/QA-20260925.json",Passed,Copy file into evidence/saves/ Executed 2026-09-25 on 4.22.3. Jira UQ-22.
+TC-019,REQ-10,Load the named save,High,Functional,TC-018 saved; optionally quit first,"1. Load QA-pack-2026-09-24
+2. Check turn number and city existence",same save,Turn and city match the save moment. Map is the same seed/layout.,"Loaded QA-20260925; turn 0/4000BC, Found-a-city prompt, same units match pre-save state",Passed,Executed 2026-09-25 on 4.22.3. Jira UQ-23.
+TC-020,REQ-11,Continue after quit,High,Functional,Saved game exists,"1. Quit to OS
+2. Launch
+3. Continue or Load last",last game,Same match resumes. Not a new map.,"Process fully exited via in-game Exit (confirmed via ps), relaunched, Resume loaded identical turn 0/4000BC state",Passed,Executed 2026-09-25 on 4.22.3. Jira UQ-24.
+TC-021,REQ-02,Smallest map still playable,Medium,Boundary,New Game,"1. Set every size/opponent control to the minimum the UI allows
+2. Start
+3. Found a city",min settings,Game starts. Map has room for the city. No crash during gen.,"Same match as TC-003: Tiny map, 1 human + 1 AI, Chieftain. City Istanbul founded (TC-006). Map stayed playable through turn 4.",Passed,Executed 2026-09-25 on 4.22.3. Jira UQ-25.
+TC-022,REQ-02,Start blocked when a required choice is empty,Low,Negative,New Game,"1. Clear or leave unset any required field the UI lets you clear
+2. Click Start",incomplete form,Start does nothing or shows a prompt. No crash. No half-generated map.,"N/A. New Game fields seen on TC-002/TC-003 all have defaults (civ, difficulty, map size, AI count). No required control could be cleared to empty.",Blocked,If every field has a default mark N/A Executed 2026-09-25 on 4.22.3. Jira UQ-4.
+TC-023,REQ-09,Save name rejected or trimmed if empty,Low,Negative,Save dialog open,"1. Clear the name field
+2. Confirm",empty name,Save is refused or a default name is applied. No crash. No zero-byte file as the only slot.,Save dialog name cleared. Enter did not create a file. No zero-byte save. Process stayed up. Existing saves unchanged.,Passed,Executed 2026-09-25 on 4.22.3. Jira UQ-26.
+TC-024,REQ-08,Owned roads not charged as neutral — regression,Medium,Confirmation,Road on owned tile if reachable in timebox,"1. Have a road on a tile you own
+2. Move a unit along it
+3. Compare movement cost to a neutral road if one exists",owned road,Movement cost matches owned-road rules. See BUG-005 (4.22.0 fix).,"No Road improvement on any tile at turn 4. City center only. No worker. Roads not reached, so movement cost was not compared.",Blocked,Skip if roads not reached; do not fail the pack Executed 2026-09-25 on 4.22.3. Jira UQ-5.

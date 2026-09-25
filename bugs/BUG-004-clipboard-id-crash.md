@@ -4,7 +4,7 @@
 **Priority:** Medium  
 **Environment:** Unciv 4.22.1 changelog  
 **Related requirement:** REQ-01 / multiplayer-adjacent control on menu  
-**Related test case:** none in the core 24 — cover only if the button is visible  
+**Related test case:** not in this run  
 **Source:** official 4.22.1 notes — “Fixed crash on 'ID from clipboard' when clipboard not set”
 
 **Steps to reproduce**
@@ -19,4 +19,4 @@ Crash.
 
 **Workaround:** Paste a real ID first, or ignore the button.  
 **Evidence:** 4.22.1 release note  
-**Notes:** Negative test on an empty clipboard. Out of core smoke; useful if the control is on your build’s menu.
+**Notes:** Not reached on 4.22.3. The control was not used during the run.

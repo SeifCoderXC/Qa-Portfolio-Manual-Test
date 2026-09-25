@@ -1,12 +1,12 @@
 # Jira board — Unciv QA (UQ)
 
-Snapshot of the private Jira project, taken 2026-09-25. The live board asks for an Atlassian login, so this page is the copy to read.
+Export of Jira project UQ on 2026-09-25. The live board requires an Atlassian account.
 
 Project **Unciv QA**, key UQ, board **UQ board**. Epic **UQ-6**. 26 issues: 21 Done, 4 To Do, epic In Progress. No Bug issue was opened. The four To Do tasks are blocked cases, not defects.
 
 Same run in TestRail: closed run 1, 20 passed, 4 blocked, 0 failed. See [testrail/results.csv](../testrail/results.csv).
 
-Screenshots on this page are in [evidence/screenshots](../evidence/screenshots). The Jira text below still names the tester-machine folder `evidance/`, which is the same set of files.
+Screenshots are in [evidence/screenshots](../evidence/screenshots). Where an issue mentions `evidance/`, that is the same file on the test machine.
 
 ## Board
 

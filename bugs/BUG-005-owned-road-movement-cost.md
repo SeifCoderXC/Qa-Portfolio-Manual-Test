@@ -20,4 +20,4 @@ Owned road could be charged as a neutral road.
 
 **Workaround:** None needed for playability.  
 **Evidence:** 4.22.0 release note  
-**Notes:** Rules bug, not a crash. Still a valid confirmation case because movement math is player-visible.
+**Notes:** Blocked on 4.22.3 with TC-024. The turn-4 save had no road tile, so the movement cost was not compared.

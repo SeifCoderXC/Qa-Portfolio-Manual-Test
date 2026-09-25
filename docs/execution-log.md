@@ -2,7 +2,7 @@
 
 Build Unciv 4.22.3. Tester Seif El Islam Bouklab. Date 2026-09-25.
 
-The 2026-09-24 rows were the analysis pass only. The table below is the executed run.
+Executed run, 2026-09-25.
 
 | TC | Jira | Title | Status | Finished | Evidence |
 |---|---|---|---|---|---|

@@ -20,4 +20,4 @@ UI could stall (ANR) on open.
 
 **Workaround:** Avoid Civilopedia on a suspect build; keep the session short.  
 **Evidence:** 4.21.11 release note  
-**Notes:** Do not scroll the whole book in a smoke pass. Open one entry and leave.
+**Notes:** Checked on 4.22.3 in TC-014. One entry was opened and Civilopedia was closed. The UI stayed responsive.

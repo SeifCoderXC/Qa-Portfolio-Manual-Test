@@ -29,9 +29,7 @@ System-level manual testing.
 | Usability | resize, blocked controls, Civilopedia |
 | Confirmation / regression | bugs in `/bugs` taken from 4.21–4.22 release notes |
 
-Exploratory charters were written (`docs/exploratory-charters.md`). This run executed the 24 cases and did not log a separate charter session.
-
-No automation in this pack. One Playwright script on a public website is a different folder, later.
+Exploratory charters were prepared and were not run as separate sessions. This run executed the 24 cases. There is no automated suite in this test.
 
 ## 4. Risk analysis
 
@@ -49,9 +47,7 @@ No automation in this pack. One Playwright script on a public website is a diffe
 
 Entry: jar launches, version string readable, no mods, Java 21 recorded.
 
-Exit for the *analysis* pack: plan, 24 cases, traceability, five regression reports, three charters.
-
-Exit for the execution pass: all 24 cases run on the tester PC. Met on 2026-09-25. Smoke TC-001–005 and persist TC-018–020 passed. Four cases are blocked, recorded as tasks, not defects. No defect was seen, so none was filed.
+Exit: all 24 cases run. Met on 2026-09-25. Smoke TC-001–005 and save/load TC-018–020 passed. Four cases are blocked and were recorded as tasks, not defects. No defect was observed, so none was filed.
 
 ## 6. Environment and tools
 

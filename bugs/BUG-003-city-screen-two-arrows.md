@@ -19,4 +19,4 @@ Crash.
 
 **Workaround:** Use one control at a time.  
 **Evidence:** 4.21.11 release note  
-**Notes:** Good interview example of a race on a UI control. Confirmation only — do not file it again on a post-4.21.11 build unless it still dies.
+**Notes:** Not reached on 4.22.3. The match had one city, so the pair of next-city arrows was not shown. The city screen itself did not crash.

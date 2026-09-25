@@ -2,7 +2,7 @@
 
 **Severity:** Major  
 **Priority:** High  
-**Environment:** Unciv 4.22.0 changelog (desktop). Confirm on tester build.  
+**Environment:** Unciv 4.22.0 changelog (desktop)  
 **Related requirement:** REQ-02  
 **Related test case:** TC-003  
 **Frequency:** unknown — treated as regression  
@@ -22,4 +22,4 @@ The screen could keep the erroring start instead of resetting.
 
 **Workaround:** Quit the process and launch again.  
 **Evidence:** release note 4.22.0  
-**Notes:** First smoke after a crash belongs on this path. On 4.22+ this should be confirmation, not a new file.
+**Notes:** On 4.22.3 this check was not reached. TC-003 started a tiny map without a generation error.

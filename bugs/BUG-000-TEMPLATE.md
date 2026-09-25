@@ -20,4 +20,4 @@
 
 **Evidence:** evidence/screenshots/YYYY-MM-DD_short-name.png
 
-**Notes:** Guess only. Search GitHub issues before filing upstream.
+**Notes:** Search existing Unciv issues before filing upstream.

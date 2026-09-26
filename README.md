@@ -13,7 +13,7 @@ Seif El Islam Bouklab tested the desktop build of [Unciv](https://github.com/yai
 |---|---|---|---|---|---|---|
 | 24 | 24 | 20 | 0 | 4 | 0 | 0 |
 
-The same totals are in Jira project UQ and in TestRail run 1. Both sites require an account. This repository holds the cases, the results, and the screenshots.
+The same totals are in Jira project UQ and in TestRail run 1. On the Jira board, passed work is Closed, the four blocked cases are Open, and the epic is In Progress. Both sites require an account. This repository holds the cases, the results, and the screenshots.
 
 ## What was tested
 

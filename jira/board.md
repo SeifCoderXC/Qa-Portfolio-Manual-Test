@@ -1,43 +1,59 @@
 # Jira board — Unciv QA (UQ)
 
-Export of Jira project UQ on 2026-09-25. The live board requires an Atlassian account.
+Export of Jira project UQ, refreshed 2026-09-26. The live board requires an Atlassian account.
 
-Project **Unciv QA**, key UQ, board **UQ board**. Epic **UQ-6**. 26 issues: 21 Done, 4 To Do, epic In Progress. No Bug issue was opened. The four To Do tasks are blocked cases, not defects.
+Project **Unciv QA**, key UQ, board **UQ board**. Epic **UQ-6**. 26 issues: 21 Closed, 4 Open, epic In Progress. No Bug issue was opened. The four Open tasks are blocked cases, not defects.
 
 Same run in TestRail: closed run 1, 20 passed, 4 blocked, 0 failed. See [testrail/results.csv](../testrail/results.csv).
 
 Screenshots are in [evidence/screenshots](../evidence/screenshots). Where an issue mentions `evidance/`, that is the same file on the test machine.
+
+## Statuses
+
+The board columns, left to right:
+
+| Status | When it is used |
+|---|---|
+| Open | New defect, or work that has not started |
+| Confirmed | Defect reproduced and accepted |
+| In Progress | Fix or test work is underway |
+| Ready for Retest | Fix is ready for QA to retest |
+| Reopened | Retest failed and the defect is back open |
+| Rejected | Not a defect, duplicate, or cannot reproduce |
+| Closed | Verified complete |
+
+On this run the execution task and the passed case tasks are Closed. The four blocked cases are Open. The epic is In Progress. Confirmed, Ready for Retest, Reopened, and Rejected are empty because no defect was filed.
 
 ## Board
 
 | Key | Case | Type | Jira status | Result | Summary |
 |---|---|---|---|---|---|
 | UQ-6 | — | Epic | In Progress | — | [Unciv] Desktop QA 4.22.3 — 2026-09-25 |
-| UQ-1 | — | Task | Done | Closed | [Unciv] Test execution 2026-09-25 desktop |
-| UQ-7 | TC-001 | Task | Done | Passed | [Unciv] TC-001 passed — Launch reaches main menu |
-| UQ-8 | TC-002 | Task | Done | Passed | [Unciv] TC-002 passed — New Game screen opens |
-| UQ-9 | TC-003 | Task | Done | Passed | [Unciv] TC-003 passed — Start a tiny single-player game |
-| UQ-10 | TC-004 | Task | Done | Passed | [Unciv] TC-004 passed — First turn controls exist |
-| UQ-11 | TC-005 | Task | Done | Passed | [Unciv] TC-005 passed — New Game with no mods |
-| UQ-12 | TC-006 | Task | Done | Passed | [Unciv] TC-006 passed — Found a city with the settler |
-| UQ-13 | TC-007 | Task | Done | Passed | [Unciv] TC-007 passed — Queue a production item |
-| UQ-14 | TC-008 | Task | Done | Passed | [Unciv] TC-008 passed — Change production before completion |
-| UQ-15 | TC-009 | Task | Done | Passed | [Unciv] TC-009 passed — Open tech picker and select a tech |
-| UQ-16 | TC-010 | Task | Done | Passed | [Unciv] TC-010 passed — Research selection survives Next Turn |
-| UQ-17 | TC-011 | Task | Done | Passed | [Unciv] TC-011 passed — Move a unit one tile |
-| UQ-2 | TC-012 | Task | To Do | Blocked | [Unciv] TC-012 blocked — warrior has no illegal neighbour |
-| UQ-3 | TC-013 | Task | To Do | Blocked | [Unciv] TC-013 blocked — no adjacent hostile by turn 4 |
-| UQ-18 | TC-014 | Task | Done | Passed | [Unciv] TC-014 passed — Civilopedia opens and closes |
-| UQ-19 | TC-015 | Task | Done | Passed | [Unciv] TC-015 passed — Resize window mid-game |
-| UQ-20 | TC-016 | Task | Done | Passed | [Unciv] TC-016 passed — Change an option and read it back |
-| UQ-21 | TC-017 | Task | Done | Passed | [Unciv] TC-017 passed — Option survives restart |
-| UQ-22 | TC-018 | Task | Done | Passed | [Unciv] TC-018 passed — Save a named game |
-| UQ-23 | TC-019 | Task | Done | Passed | [Unciv] TC-019 passed — Load the named save |
-| UQ-24 | TC-020 | Task | Done | Passed | [Unciv] TC-020 passed — Continue after quit |
-| UQ-25 | TC-021 | Task | Done | Passed | [Unciv] TC-021 passed — Smallest map still playable |
-| UQ-4 | TC-022 | Task | To Do | Blocked | [Unciv] TC-022 blocked — New Game fields all have defaults |
-| UQ-26 | TC-023 | Task | Done | Passed | [Unciv] TC-023 passed — Save name rejected or trimmed if empty |
-| UQ-5 | TC-024 | Task | To Do | Blocked | [Unciv] TC-024 blocked — no road tile to measure |
+| UQ-1 | — | Task | Closed | Closed | [Unciv] Test execution 2026-09-25 desktop |
+| UQ-7 | TC-001 | Task | Closed | Passed | [Unciv] TC-001 passed — Launch reaches main menu |
+| UQ-8 | TC-002 | Task | Closed | Passed | [Unciv] TC-002 passed — New Game screen opens |
+| UQ-9 | TC-003 | Task | Closed | Passed | [Unciv] TC-003 passed — Start a tiny single-player game |
+| UQ-10 | TC-004 | Task | Closed | Passed | [Unciv] TC-004 passed — First turn controls exist |
+| UQ-11 | TC-005 | Task | Closed | Passed | [Unciv] TC-005 passed — New Game with no mods |
+| UQ-12 | TC-006 | Task | Closed | Passed | [Unciv] TC-006 passed — Found a city with the settler |
+| UQ-13 | TC-007 | Task | Closed | Passed | [Unciv] TC-007 passed — Queue a production item |
+| UQ-14 | TC-008 | Task | Closed | Passed | [Unciv] TC-008 passed — Change production before completion |
+| UQ-15 | TC-009 | Task | Closed | Passed | [Unciv] TC-009 passed — Open tech picker and select a tech |
+| UQ-16 | TC-010 | Task | Closed | Passed | [Unciv] TC-010 passed — Research selection survives Next Turn |
+| UQ-17 | TC-011 | Task | Closed | Passed | [Unciv] TC-011 passed — Move a unit one tile |
+| UQ-2 | TC-012 | Task | Open | Blocked | [Unciv] TC-012 blocked — warrior has no illegal neighbour |
+| UQ-3 | TC-013 | Task | Open | Blocked | [Unciv] TC-013 blocked — no adjacent hostile by turn 4 |
+| UQ-18 | TC-014 | Task | Closed | Passed | [Unciv] TC-014 passed — Civilopedia opens and closes |
+| UQ-19 | TC-015 | Task | Closed | Passed | [Unciv] TC-015 passed — Resize window mid-game |
+| UQ-20 | TC-016 | Task | Closed | Passed | [Unciv] TC-016 passed — Change an option and read it back |
+| UQ-21 | TC-017 | Task | Closed | Passed | [Unciv] TC-017 passed — Option survives restart |
+| UQ-22 | TC-018 | Task | Closed | Passed | [Unciv] TC-018 passed — Save a named game |
+| UQ-23 | TC-019 | Task | Closed | Passed | [Unciv] TC-019 passed — Load the named save |
+| UQ-24 | TC-020 | Task | Closed | Passed | [Unciv] TC-020 passed — Continue after quit |
+| UQ-25 | TC-021 | Task | Closed | Passed | [Unciv] TC-021 passed — Smallest map still playable |
+| UQ-4 | TC-022 | Task | Open | Blocked | [Unciv] TC-022 blocked — New Game fields all have defaults |
+| UQ-26 | TC-023 | Task | Closed | Passed | [Unciv] TC-023 passed — Save name rejected or trimmed if empty |
+| UQ-5 | TC-024 | Task | Open | Blocked | [Unciv] TC-024 blocked — no road tile to measure |
 
 Environment on every issue: Unciv 4.22.3, launcher `./Unciv`, OpenJDK 21.0.7, Linux Lite (Ubuntu 24.04 family), X11, English UI, no mods. Tester: Seif El Islam Bouklab. Dates: start 2026-09-25, due 2026-09-25.
 
@@ -51,7 +67,7 @@ Environment on every issue: Unciv 4.22.3, launcher `./Unciv`, OpenJDK 21.0.7, Li
 
 Desktop certification of Unciv 4.22.3 on 2026-09-25. 24 cases executed. 20 passed, 0 failed, 4 blocked. No defect filed.
 
-Passed cases are Done tasks under this epic. Blocked cases stay To Do. They are follow-up tasks, not bugs.
+Passed cases are Closed tasks under this epic. Blocked cases stay Open. They are follow-up tasks, not bugs.
 
 [TestRail run](https://seiftester.testrail.io/index.php?/runs/view/1) · [GitHub](https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
 
@@ -60,7 +76,7 @@ Passed cases are Done tasks under this epic. Blocked cases stay To Do. They are 
 ## UQ-1 — [Unciv] Test execution 2026-09-25 desktop
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** High  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -119,7 +135,7 @@ Local evidence: evidance/run/test-run.xlsx and evidance/run/unciv-evidence-2026-
 ## UQ-7 — [Unciv] TC-001 passed — Launch reaches main menu
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** High  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -170,7 +186,7 @@ evidance/screenshots/2026-09-25_0009_TC001_main-menu.png
 ## UQ-8 — [Unciv] TC-002 passed — New Game screen opens
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** High  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -220,7 +236,7 @@ evidance/screenshots/2026-09-25_0013_TC002_newgame-screen.png
 ## UQ-9 — [Unciv] TC-003 passed — Start a tiny single-player game
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** High  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -273,7 +289,7 @@ evidance/screenshots/2026-09-25_0014_TC003_game-started.png
 ## UQ-10 — [Unciv] TC-004 passed — First turn controls exist
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** High  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -324,7 +340,7 @@ evidance/screenshots/2026-09-25_0015_TC004_first-turn-controls.png
 ## UQ-11 — [Unciv] TC-005 passed — New Game with no mods
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** High  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -373,7 +389,7 @@ No separate screenshot. Observed during the same match.
 ## UQ-12 — [Unciv] TC-006 passed — Found a city with the settler
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** High  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -424,7 +440,7 @@ evidance/screenshots/2026-09-25_0022_TC006_city-founded.png
 ## UQ-13 — [Unciv] TC-007 passed — Queue a production item
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** High  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -476,7 +492,7 @@ evidance/screenshots/2026-09-25_0023_TC007_queued.png
 ## UQ-14 — [Unciv] TC-008 passed — Change production before completion
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** Medium  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -527,7 +543,7 @@ evidance/screenshots/2026-09-25_0124_TC008-step3_monument.png
 ## UQ-15 — [Unciv] TC-009 passed — Open tech picker and select a tech
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** High  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -579,7 +595,7 @@ evidance/screenshots/2026-09-25_0024_TC009-step2_selected.png
 ## UQ-16 — [Unciv] TC-010 passed — Research selection survives Next Turn
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** High  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -629,7 +645,7 @@ evidance/screenshots/2026-09-25_0130_TC010-turn1.png
 ## UQ-17 — [Unciv] TC-011 passed — Move a unit one tile
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** High  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -680,7 +696,7 @@ evidance/screenshots/2026-09-25_0026_TC011_moved-confirm.png
 ## UQ-2 — [Unciv] TC-012 blocked — warrior has no illegal neighbour
 
 **Type:** Task  
-**Status:** To Do  
+**Status:** Open  
 **Priority:** Medium  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -730,7 +746,7 @@ evidance/screenshots/2026-09-25_0133_TC012-water-click.png
 ## UQ-3 — [Unciv] TC-013 blocked — no adjacent hostile by turn 4
 
 **Type:** Task  
-**Status:** To Do  
+**Status:** Open  
 **Priority:** Medium  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -781,7 +797,7 @@ evidance/screenshots/2026-09-25_0149_back-to-map.png
 ## UQ-18 — [Unciv] TC-014 passed — Civilopedia opens and closes
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** Medium  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -832,7 +848,7 @@ evidance/screenshots/2026-09-25_0027_TC014_closed-responsive.png
 ## UQ-19 — [Unciv] TC-015 passed — Resize window mid-game
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** Medium  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -883,7 +899,7 @@ evidance/screenshots/2026-09-25_0135_TC015-restored.png
 ## UQ-20 — [Unciv] TC-016 passed — Change an option and read it back
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** High  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -935,7 +951,7 @@ evidance/screenshots/2026-09-25_0028_TC016_reopened-persists.png
 ## UQ-21 — [Unciv] TC-017 passed — Option survives restart
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** High  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -986,7 +1002,7 @@ evidance/screenshots/2026-09-25_0103_TC017_persists-after-restart.png
 ## UQ-22 — [Unciv] TC-018 passed — Save a named game
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** High  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -1038,7 +1054,7 @@ evidance/screenshots/2026-09-25_0017_TC018_saved.png
 ## UQ-23 — [Unciv] TC-019 passed — Load the named save
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** High  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -1088,7 +1104,7 @@ evidance/screenshots/2026-09-25_0019_TC019_loaded-match.png
 ## UQ-24 — [Unciv] TC-020 passed — Continue after quit
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** High  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -1139,7 +1155,7 @@ evidance/screenshots/2026-09-25_0021_TC020_resumed-match.png
 ## UQ-25 — [Unciv] TC-021 passed — Smallest map still playable
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** Medium  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -1188,7 +1204,7 @@ No separate screenshot. Observed during the same match.
 ## UQ-4 — [Unciv] TC-022 blocked — New Game fields all have defaults
 
 **Type:** Task  
-**Status:** To Do  
+**Status:** Open  
 **Priority:** Low  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -1238,7 +1254,7 @@ evidance/screenshots/2026-09-25_0013_TC002_newgame-screen.png
 ## UQ-26 — [Unciv] TC-023 passed — Save name rejected or trimmed if empty
 
 **Type:** Task  
-**Status:** Done  
+**Status:** Closed  
 **Priority:** Low  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  
@@ -1288,7 +1304,7 @@ evidance/screenshots/2026-09-25_0140_TC023-after-enter.png
 ## UQ-5 — [Unciv] TC-024 blocked — no road tile to measure
 
 **Type:** Task  
-**Status:** To Do  
+**Status:** Open  
 **Priority:** Medium  
 **Assignee:** Seif el islam bouklab  
 **Parent:** UQ-6  

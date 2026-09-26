@@ -1,5 +1,5 @@
 Issue key,Issue id,Summary,Issue Type,Status,Priority,Resolution,Assignee,Reporter,Creator,Created,Updated,Due date,Start date,Parent,Labels,Environment,Description,Linked Issues,Evidence
-UQ-1,10059,[Unciv] Test execution 2026-09-25 desktop,Task,Done,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,2026-09-25 desktop execution unciv,"Unciv 4.22.3
+UQ-1,10059,[Unciv] Test execution 2026-09-25 desktop,Task,Closed,High,Unresolved,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,2026-09-25 desktop execution unciv,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -56,7 +56,7 @@ Unciv 4.22.3, launcher ./Unciv. Tester Seif El Islam Bouklab.
 TestRail run (https://seiftester.testrail.io/index.php?/runs/view/1) · TestRail project (https://seiftester.testrail.io/index.php?/projects/overview/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)
 
 Local evidence: evidance/run/test-run.xlsx and evidance/run/unciv-evidence-2026-09-25.zip",relates to UQ-2; relates to UQ-3; relates to UQ-4; relates to UQ-5; relates to UQ-7; relates to UQ-8; relates to UQ-9; relates to UQ-10; relates to UQ-11; relates to UQ-12; relates to UQ-13; relates to UQ-14; relates to UQ-15; relates to UQ-16; relates to UQ-17; relates to UQ-18; relates to UQ-19; relates to UQ-20; relates to UQ-21; relates to UQ-22; relates to UQ-23; relates to UQ-24; relates to UQ-25; relates to UQ-26,evidance/run/test-run.xlsx evidance/run/unciv-evidence-2026-09-25.zip
-UQ-2,10060,[Unciv] TC-012 blocked — warrior has no illegal neighbour,Task,To Do,Medium,Unresolved,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-07 TC-012 blocked negative,"Unciv 4.22.3
+UQ-2,10060,[Unciv] TC-012 blocked — warrior has no illegal neighbour,Task,Open,Medium,Unresolved,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-07 TC-012 blocked negative,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -100,7 +100,7 @@ evidance/screenshots/2026-09-25_0133_TC012-water-click.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/12) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0133_TC012-water-click.png
-UQ-3,10061,[Unciv] TC-013 blocked — no adjacent hostile by turn 4,Task,To Do,Medium,Unresolved,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-08 TC-013 blocked functional,"Unciv 4.22.3
+UQ-3,10061,[Unciv] TC-013 blocked — no adjacent hostile by turn 4,Task,Open,Medium,Unresolved,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-08 TC-013 blocked functional,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -145,7 +145,7 @@ evidance/screenshots/2026-09-25_0149_back-to-map.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/13) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0149_back-to-map.png
-UQ-4,10062,[Unciv] TC-022 blocked — New Game fields all have defaults,Task,To Do,Low,Unresolved,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-02 TC-022 blocked negative,"Unciv 4.22.3
+UQ-4,10062,[Unciv] TC-022 blocked — New Game fields all have defaults,Task,Open,Low,Unresolved,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-02 TC-022 blocked negative,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -189,7 +189,7 @@ evidance/screenshots/2026-09-25_0013_TC002_newgame-screen.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/22) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0013_TC002_newgame-screen.png
-UQ-5,10063,[Unciv] TC-024 blocked — no road tile to measure,Task,To Do,Medium,Unresolved,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-08 TC-024 blocked confirmation,"Unciv 4.22.3
+UQ-5,10063,[Unciv] TC-024 blocked — no road tile to measure,Task,Open,Medium,Unresolved,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-08 TC-024 blocked confirmation,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -246,10 +246,10 @@ Display: X11
 
 Tester: Seif El Islam Bouklab","Desktop certification of Unciv 4.22.3 on 2026-09-25. 24 cases executed. 20 passed, 0 failed, 4 blocked. No defect filed.
 
-Passed cases are Done tasks under this epic. Blocked cases stay To Do. They are follow-up tasks, not bugs.
+Passed cases are Closed tasks under this epic. Blocked cases stay Open. They are follow-up tasks, not bugs.
 
 TestRail run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",,
-UQ-7,10066,[Unciv] TC-001 passed — Launch reaches main menu,Task,Done,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-01 TC-001 passed smoke,"Unciv 4.22.3
+UQ-7,10066,[Unciv] TC-001 passed — Launch reaches main menu,Task,Closed,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-01 TC-001 passed smoke,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -294,7 +294,7 @@ evidance/screenshots/2026-09-25_0009_TC001_main-menu.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/1) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0009_TC001_main-menu.png
-UQ-8,10067,[Unciv] TC-002 passed — New Game screen opens,Task,Done,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-02 TC-002 passed smoke,"Unciv 4.22.3
+UQ-8,10067,[Unciv] TC-002 passed — New Game screen opens,Task,Closed,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-02 TC-002 passed smoke,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -338,7 +338,7 @@ evidance/screenshots/2026-09-25_0013_TC002_newgame-screen.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/2) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0013_TC002_newgame-screen.png
-UQ-9,10068,[Unciv] TC-003 passed — Start a tiny single-player game,Task,Done,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-02 TC-003 passed smoke,"Unciv 4.22.3
+UQ-9,10068,[Unciv] TC-003 passed — Start a tiny single-player game,Task,Closed,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-02 TC-003 passed smoke,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -385,7 +385,7 @@ evidance/screenshots/2026-09-25_0014_TC003_game-started.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/3) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0014_TC003_game-started.png
-UQ-10,10069,[Unciv] TC-004 passed — First turn controls exist,Task,Done,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-03 TC-004 passed smoke,"Unciv 4.22.3
+UQ-10,10069,[Unciv] TC-004 passed — First turn controls exist,Task,Closed,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-03 TC-004 passed smoke,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -428,7 +428,7 @@ evidance/screenshots/2026-09-25_0015_TC004_first-turn-controls.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/4) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0015_TC004_first-turn-controls.png
-UQ-11,10070,[Unciv] TC-005 passed — New Game with no mods,Task,Done,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-15 TC-005 passed smoke,"Unciv 4.22.3
+UQ-11,10070,[Unciv] TC-005 passed — New Game with no mods,Task,Closed,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-15 TC-005 passed smoke,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -473,7 +473,7 @@ No separate screenshot. Observed during the same match.
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/5) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,
-UQ-12,10071,[Unciv] TC-006 passed — Found a city with the settler,Task,Done,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-04 TC-006 functional passed,"Unciv 4.22.3
+UQ-12,10071,[Unciv] TC-006 passed — Found a city with the settler,Task,Closed,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-04 TC-006 functional passed,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -518,7 +518,7 @@ evidance/screenshots/2026-09-25_0022_TC006_city-founded.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/6) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0022_TC006_city-founded.png
-UQ-13,10072,[Unciv] TC-007 passed — Queue a production item,Task,Done,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-05 TC-007 functional passed,"Unciv 4.22.3
+UQ-13,10072,[Unciv] TC-007 passed — Queue a production item,Task,Closed,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-05 TC-007 functional passed,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -564,7 +564,7 @@ evidance/screenshots/2026-09-25_0023_TC007_queued.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/7) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0023_TC007_queued.png
-UQ-14,10073,[Unciv] TC-008 passed — Change production before completion,Task,Done,Medium,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-05 TC-008 functional passed,"Unciv 4.22.3
+UQ-14,10073,[Unciv] TC-008 passed — Change production before completion,Task,Closed,Medium,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-05 TC-008 functional passed,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -609,7 +609,7 @@ evidance/screenshots/2026-09-25_0124_TC008-step3_monument.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/8) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0124_TC008-step3_monument.png
-UQ-15,10074,[Unciv] TC-009 passed — Open tech picker and select a tech,Task,Done,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-06 TC-009 functional passed,"Unciv 4.22.3
+UQ-15,10074,[Unciv] TC-009 passed — Open tech picker and select a tech,Task,Closed,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-06 TC-009 functional passed,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -655,7 +655,7 @@ evidance/screenshots/2026-09-25_0024_TC009-step2_selected.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/9) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0024_TC009-step2_selected.png
-UQ-16,10075,[Unciv] TC-010 passed — Research selection survives Next Turn,Task,Done,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-06 TC-010 functional passed,"Unciv 4.22.3
+UQ-16,10075,[Unciv] TC-010 passed — Research selection survives Next Turn,Task,Closed,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-06 TC-010 functional passed,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -697,7 +697,7 @@ evidance/screenshots/2026-09-25_0130_TC010-turn1.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/10) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0130_TC010-turn1.png
-UQ-17,10076,[Unciv] TC-011 passed — Move a unit one tile,Task,Done,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-07 TC-011 functional passed,"Unciv 4.22.3
+UQ-17,10076,[Unciv] TC-011 passed — Move a unit one tile,Task,Closed,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-07 TC-011 functional passed,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -742,7 +742,7 @@ evidance/screenshots/2026-09-25_0026_TC011_moved-confirm.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/11) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0026_TC011_moved-confirm.png
-UQ-18,10077,[Unciv] TC-014 passed — Civilopedia opens and closes,Task,Done,Medium,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-14 TC-014 passed usability,"Unciv 4.22.3
+UQ-18,10077,[Unciv] TC-014 passed — Civilopedia opens and closes,Task,Closed,Medium,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-14 TC-014 passed usability,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -787,7 +787,7 @@ evidance/screenshots/2026-09-25_0027_TC014_closed-responsive.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/14) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0027_TC014_closed-responsive.png
-UQ-19,10078,[Unciv] TC-015 passed — Resize window mid-game,Task,Done,Medium,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-13 TC-015 passed usability,"Unciv 4.22.3
+UQ-19,10078,[Unciv] TC-015 passed — Resize window mid-game,Task,Closed,Medium,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-13 TC-015 passed usability,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -832,7 +832,7 @@ evidance/screenshots/2026-09-25_0135_TC015-restored.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/15) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0135_TC015-restored.png
-UQ-20,10079,[Unciv] TC-016 passed — Change an option and read it back,Task,Done,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-12 TC-016 functional passed,"Unciv 4.22.3
+UQ-20,10079,[Unciv] TC-016 passed — Change an option and read it back,Task,Closed,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-12 TC-016 functional passed,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -878,7 +878,7 @@ evidance/screenshots/2026-09-25_0028_TC016_reopened-persists.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/16) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0028_TC016_reopened-persists.png
-UQ-21,10080,[Unciv] TC-017 passed — Option survives restart,Task,Done,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-12 TC-017 confirmation passed,"Unciv 4.22.3
+UQ-21,10080,[Unciv] TC-017 passed — Option survives restart,Task,Closed,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-12 TC-017 confirmation passed,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -923,7 +923,7 @@ evidance/screenshots/2026-09-25_0103_TC017_persists-after-restart.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/17) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0103_TC017_persists-after-restart.png
-UQ-22,10081,[Unciv] TC-018 passed — Save a named game,Task,Done,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-09 TC-018 functional passed,"Unciv 4.22.3
+UQ-22,10081,[Unciv] TC-018 passed — Save a named game,Task,Closed,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-09 TC-018 functional passed,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -969,7 +969,7 @@ evidance/screenshots/2026-09-25_0017_TC018_saved.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/18) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0017_TC018_saved.png
-UQ-23,10082,[Unciv] TC-019 passed — Load the named save,Task,Done,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-10 TC-019 functional passed,"Unciv 4.22.3
+UQ-23,10082,[Unciv] TC-019 passed — Load the named save,Task,Closed,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-10 TC-019 functional passed,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -1013,7 +1013,7 @@ evidance/screenshots/2026-09-25_0019_TC019_loaded-match.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/19) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0019_TC019_loaded-match.png
-UQ-24,10083,[Unciv] TC-020 passed — Continue after quit,Task,Done,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-11 TC-020 functional passed,"Unciv 4.22.3
+UQ-24,10083,[Unciv] TC-020 passed — Continue after quit,Task,Closed,High,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-11 TC-020 functional passed,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -1058,7 +1058,7 @@ evidance/screenshots/2026-09-25_0021_TC020_resumed-match.png
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/20) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,evidance/screenshots/2026-09-25_0021_TC020_resumed-match.png
-UQ-25,10084,[Unciv] TC-021 passed — Smallest map still playable,Task,Done,Medium,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-02 TC-021 boundary passed,"Unciv 4.22.3
+UQ-25,10084,[Unciv] TC-021 passed — Smallest map still playable,Task,Closed,Medium,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-02 TC-021 boundary passed,"Unciv 4.22.3
 
 Launcher: ./Unciv
 
@@ -1103,7 +1103,7 @@ No separate screenshot. Observed during the same match.
 #### Links
 
 TestRail case (https://seiftester.testrail.io/index.php?/cases/view/21) · Run (https://seiftester.testrail.io/index.php?/runs/view/1) · GitHub (https://github.com/SeifCoderXC/Qa-Portfolio-Manual-Test/issues/1)",relates to UQ-1,
-UQ-26,10085,[Unciv] TC-023 passed — Save name rejected or trimmed if empty,Task,Done,Low,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-09 TC-023 negative passed,"Unciv 4.22.3
+UQ-26,10085,[Unciv] TC-023 passed — Save name rejected or trimmed if empty,Task,Closed,Low,Done,Seif el islam bouklab,Seif el islam bouklab,Seif el islam bouklab,2026-09-25,2026-09-25,2026-09-25,2026-09-25,UQ-6,REQ-09 TC-023 negative passed,"Unciv 4.22.3
 
 Launcher: ./Unciv
 

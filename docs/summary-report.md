@@ -29,6 +29,6 @@ Regression on this build: BUG-002 (Civilopedia) was checked with TC-014 and did 
 
 Not tested: multiplayer, mods, Android, every civilization, late-game victory, localisation.
 
-Jira: project UQ, epic UQ-6, 21 Done, 4 To Do, epic In Progress. The readable copy is [jira/board.md](../jira/board.md) and [jira/issues.csv](../jira/issues.csv).
+Jira: project UQ, epic UQ-6. Statuses are Open, Confirmed, In Progress, Ready for Retest, Reopened, Rejected, and Closed. This run: 21 Closed, 4 Open, epic In Progress. The readable copy is [jira/board.md](../jira/board.md) and [jira/issues.csv](../jira/issues.csv).
 
 TestRail: project 1, closed run 1, same totals. The readable copy is [testrail/results.csv](../testrail/results.csv).

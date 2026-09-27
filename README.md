@@ -1,6 +1,6 @@
 # Unciv 4.22.3 — manual test report
 
-Seif El Islam Bouklab tested the desktop build of [Unciv](https://github.com/yairm210/Unciv) 4.22.3 on 25 September 2026. Unciv is an open-source strategy game. This test is independent and is not affiliated with the maintainers.
+Seif El Islam Bouklab, I tested the desktop build of [Unciv](https://github.com/yairm210/Unciv) 4.22.3. Unciv is an open-source strategy game. This test is independent and is not affiliated with the maintainers.
 
 **Environment:** Linux Lite (Ubuntu 24.04), OpenJDK 21.0.7, 1366×768, English UI, no mods
 **Launch:** `./Unciv`
